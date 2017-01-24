@@ -1,8 +1,8 @@
 Package: givitiR
 Type: Package
 Title: The GiViTI Calibration Test and Belt
-Version: 1.2
-Date: 2016-06-28
+Version: 1.3
+Date: 2017-01-19
 Authors@R: c(person("Giovanni", "Nattino", email = "giovanni.nattino@marionegri.it", role = c("cre","aut")),
     person("Stefano", "Finazzi", role = "aut"),
     person("Guido", "Bertolini", role = "aut"),
@@ -15,7 +15,7 @@ Imports: alabama, rootSolve, grDevices, graphics, stats
 Suggests: testthat, knitr, rmarkdown
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2016-07-13 19:30:28 UTC; Giovanni
+Packaged: 2017-01-24 02:38:19 UTC; Giovanni
 Author: Giovanni Nattino [cre, aut],
   Stefano Finazzi [aut],
   Guido Bertolini [aut],
@@ -23,4 +23,4 @@ Author: Giovanni Nattino [cre, aut],
   Greta Carrara [aut]
 Maintainer: Giovanni Nattino <giovanni.nattino@marionegri.it>
 Repository: CRAN
-Date/Publication: 2016-07-14 07:21:13
+Date/Publication: 2017-01-24 08:12:25

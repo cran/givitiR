@@ -7,7 +7,8 @@
 \method{plot}{givitiCalibrationBelt}(x, xlim = c(0, 1), ylim = c(0, 1),
   colBis = "red", xlab = "e", ylab = "o",
   main = "GiViTI Calibration Belt", polynomialString = T,
-  pvalueString = T, nString = T, table = T, tableStrings = NULL, ...)
+  pvalueString = T, nString = T, table = T, tableStrings = NULL,
+  unableToFitString = NULL, ...)
 }
 \arguments{
 \item{x}{A \code{givitiCalibrationBelt} object, to be generated with
@@ -49,6 +50,12 @@ printed on the plot.}
 texts "Over the bisector"/"Under the bisector"/"Confidence level"/"NEVER"
 in the table reporting the intersections of the calibration belt with
 the bisector.}
+
+\item{unableToFitString}{Optional. If a string is passed to this argument,
+this string is reported in the plot area when the dataset is not compatible
+with the fit of the calibration belt (e.g. data separation or no positive events).
+By default, in such cases the text "Unable to fit the Calibration Belt" is
+reported.}
 
 \item{...}{Other graphical parameters passed to the generic \code{plot} method.}
 }

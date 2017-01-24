@@ -183,7 +183,7 @@ givitiCheckData <- function(o, e) {
 
   }
 
-  if(dataSeparation) {
+  if(noOucomeVariation) {
 
     resultCheck <- " the number of events/non events is less than 1."
 
@@ -687,7 +687,12 @@ givitiCalibrationBelt <- function(o, e, devel,
 #'  texts "Over the bisector"/"Under the bisector"/"Confidence level"/"NEVER"
 #'  in the table reporting the intersections of the calibration belt with
 #'  the bisector.
-#'  @param ... Other graphical parameters passed to the generic \code{plot} method.
+#' @param unableToFitString Optional. If a string is passed to this argument,
+#'  this string is reported in the plot area when the dataset is not compatible
+#'  with the fit of the calibration belt (e.g. data separation or no positive events).
+#'  By default, in such cases the text "Unable to fit the Calibration Belt" is
+#'  reported.
+#' @param ... Other graphical parameters passed to the generic \code{plot} method.
 #' @return The function generates the calibration belt plot. In addition,
 #' a list containing the following components is returned:
 #' \describe{
@@ -721,6 +726,7 @@ plot.givitiCalibrationBelt <- function(x,
                                       nString = T,
                                       table = T,
                                       tableStrings = NULL,
+                                      unableToFitString = NULL,
                                       ...) {
 
   cb <- x
@@ -741,9 +747,18 @@ plot.givitiCalibrationBelt <- function(x,
 
   if(!is.null(cb$resultCheck)) {
 
+    if(is.null(unableToFitString)) {
+
+        labelUnableToFit <- "Unable to fit the Calibration Belt"
+
+    } else {
+
+        labelUnableToFit <- unableToFitString
+    }
+
     text(xlim[1] + 0.18 * (xlim[2] - xlim[1]),
          ylim[1] + 0.5* (ylim[2] - ylim[1]),
-         labels = "Unable to fit the Calibration Belt",
+         labels = labelUnableToFit,
          adj = 0)
 
     return(list(m = cb$m, p.value = cb$p.value))

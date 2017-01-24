@@ -1,15 +1,15 @@
-35b2250499434d21cfd785b20391f11a *DESCRIPTION
+0465b3c88c78330652fca2f9944acd53 *DESCRIPTION
 519e4eb12441215a883407fbb37a70be *NAMESPACE
 0a9c62a6460cf3f692c5cc848faaba49 *R/data.R
 a574872b64ba0b6e0d540c8c340e72eb *R/givitiCalibrationBasic.R
 8d02a1a2992ef7a7e0eeaefeaa8cc439 *R/givitiCalibrationBeltUtilities.R
-0761deb03a93fd0c4e4ecbaa2d000052 *R/givitiCalibrationMain.R
+402307853e212a4091b3832a0f2db062 *R/givitiCalibrationMain.R
 1f39dacc242b6ae427da2a5a63d127a8 *R/givitiR.R
 b7e5eda6788b1f9c8a4fa362722d47ca *build/vignette.rds
 5fb156187e050a7cb94389b503fccc7d *data/icuData.RData
 599d1b1b033435dc48abb9faf93de7dc *inst/doc/givitiR.R
 677a3e96721b2f02448bc93665e764c9 *inst/doc/givitiR.Rmd
-1b2dedd31b0e7898a41e353fff34a1fd *inst/doc/givitiR.html
+975de8fa0d1b3388850a5e78fc58627d *inst/doc/givitiR.html
 4253ee8a9b59b768cf2e6cc4731eef51 *man/calibrationBeltIntersections.Rd
 d509535663ab07e4548e1a725b99c3c7 *man/calibrationBeltPoints.Rd
 0c70b4d673c9b5b2392ecb34d7f88d0c *man/givitiCalibrationBelt.Rd
@@ -22,7 +22,7 @@ b84766a5da9c35e35c3329f59b425495 *man/givitiCheckData.Rd
 d0b12e6e42e2735f007a99f896c90346 *man/givitiStatCdf.Rd
 71bf8bc7a8f4e97f4c612ba32eba4368 *man/icuData.Rd
 6c211dcb526d2dac5c274c02530a2d7f *man/logit.Rd
-d41e562415f649bf979a7ed0032d3f74 *man/plot.givitiCalibrationBelt.Rd
+c630ee7cee6127bc4979ea5fd20ecc83 *man/plot.givitiCalibrationBelt.Rd
 343545b8959b0b419271f6b29a618214 *man/polynomialLogRegrFw.Rd
 546858ad236f709ae70911ab93861303 *tests/testthat.R
 9898ba851cfc3587959f848fb79cd8dc *tests/testthat/testCdf.R
